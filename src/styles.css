@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.btn,
+.jumbotron,
+.nav :hover {
+	border-radius: 0px;
+}
+
+body {
+	background: #343a40;
+	font-family: "Rubik", sans-serif;
+}
+
+/* footer {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+} */
+
+.jumbotron {
+	padding: 1rem 1rem;
+}
+
+.p-4 {
+	padding: 0.5rem !important;
+}
+
+.py-3 {
+	margin-top: 30px;
+	padding-bottom: 0px;
+	padding-top: 2rem;
+}
+
+#home-card {
+	width: 70vw;
+	height: 70vh;
+	margin-left: 10%;
+}
+
+@media screen and (max-width: 375px) {
+	div.card {
+		width: 20rem;
+		display: relative;
+	}
+	body {
+		display: block;
+	}
+}
