@@ -12,7 +12,7 @@
 /build
 
 #payment gateways
-/src/payment gateways
+# /src/payment gateways
 
 # misc
 .DS_Store
