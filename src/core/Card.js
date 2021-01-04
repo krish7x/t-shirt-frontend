@@ -58,7 +58,8 @@ const Card = ({
 	};
 
 	return (
-		<div className='card text-white text-center bg-dark border border-info mt-3'>
+		<div className='card text-white text-center bg-dark border border-info mt-3' style = {{height : "500px"
+		}}>
 			<div className='card-header lead'>{productTitle}</div>
 			<div className='card-body'>
 				<Imagehelper product={product} />

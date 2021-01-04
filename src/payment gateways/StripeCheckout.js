@@ -56,7 +56,7 @@ const Stripecheckout = ({ product, setReload = (f) => f, reload = true }) => {
 		if (product.length !== 0 && isAuthenticated()) {
 			return (
 				<StripeCheckout
-					stripeKey='pk_test_eVhG4rgveaH5Yh9ZeqaShRK100aJJ8wjAk'
+					stripeKey='pk_test_bsVQpjjTCeKjAD2fCOgElFoi00xvib4ubj'
 					token={makePayment}
 					amount={totalCartPrice() * 100}
 					name='Buy T-Shirts'
