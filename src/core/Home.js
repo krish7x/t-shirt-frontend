@@ -23,7 +23,7 @@ export default function Home() {
 		getAllProducts();
 	}, []);
 	return (
-		<Base title='Home Page' description='Welcome to My T-shirt Store'>
+		<Base title='Home Page' description='Welcome to My Online T-shirt Store'>
 			<h1 className='text-white text-center'>Products</h1>
 			<div className='row mt-2 ml-2 mr-2	'>
 				{products &&
