@@ -39,16 +39,23 @@ export default function Cart() {
 	);
 	return (
 		<Base title='Cart Page' description='Ready to checkout'>
-			<div className='row text-center mt-2'>
-				<div className='col-3'>{loadAllProducts(product)}</div>
-				<div className='col-3'></div>
-				<div className='col-6'>
+			<div className='row text-center mt-2' 
+			style = {{
+				display : "flex",
+				flexWrap : "wrap"
+			}}
+			>	<div className = "col-2"></div>
+				<div className='col-4'>{loadAllProducts(product)}</div>
+				<div className='col-4' style = {{
+					marginLeft : "5rem"
+				}}>
 					<StripeCheckout
 						product={product}
 						reload={reload}
 						setReload={setReload}
 					/>
 				</div>
+				<div className = "col-2"></div>
 			</div>
 		</Base>
 	);
