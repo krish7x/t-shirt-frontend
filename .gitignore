@@ -11,8 +11,7 @@
 # production
 /build
 
-#payment gateways
-/src/payment gateways
+/node_modules
 
 # misc
 .DS_Store
