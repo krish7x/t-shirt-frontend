@@ -20,7 +20,7 @@ export default function Home() {
 	};
 
 	useEffect(() => {
-		getAllProducts();
+		if (products) getAllProducts();
 	}, []);
 	return (
 		<Base title='Home Page' description='Welcome to My Online T-shirt Store'>
