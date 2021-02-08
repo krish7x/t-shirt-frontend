@@ -5,7 +5,6 @@ import { isAuthenticated } from "../auth/helper";
 import { Link } from "react-router-dom";
 import StripeCheckout from "react-stripe-checkout";
 import { API } from "../backend";
-import { emptyCart } from "../core/helper/carthelper";
 
 const Stripecheckout = ({ product, setReload = (f) => f, reload = true }) => {
 	const [data, setData] = useState({
