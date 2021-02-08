@@ -9,8 +9,8 @@ export default function Home() {
 	const [products, setProducts] = useState([]);
 	const [error, setError] = useState([]);
 
-	const getAllProducts = () => {
-		getProducts().then((data) => {
+	const getAllProducts = async () => {
+		await getProducts().then((data) => {
 			if (data.error) {
 				return setError(data.error);
 			} else {
@@ -21,7 +21,7 @@ export default function Home() {
 
 	useEffect(() => {
 		if (products) getAllProducts();
-	}, [products]);
+	}, );
 	return (
 		<Base title='Home Page' description='Welcome to My Online T-shirt Store'>
 			<h1 className='text-white text-center'>Products</h1>
