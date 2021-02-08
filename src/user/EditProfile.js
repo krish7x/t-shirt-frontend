@@ -34,7 +34,7 @@ const AddProducts = () => {
 
 	useEffect(() => {
 		preload();
-	}, []);
+	}, );
 
 	//Handling input onChange events
 	const handleNameChange = (name) => (event) => {

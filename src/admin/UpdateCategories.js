@@ -27,7 +27,7 @@ export default function AddCategory({ match }) {
 
 	useEffect(() => {
 		preload(match.params.categoryId);
-	}, []);
+	},);
 
 	const onHandleChange = (event) => {
 		setError("");

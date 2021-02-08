@@ -10,7 +10,8 @@ const AdminDashBoard = () => {
 
 	const { user: { _id, name, email, role }, token } = isAuthenticated();
 
-	const preload = () => {
+
+	useEffect(() => {
 		getUser(_id, token).then((data) => {
 			if (data.error) {
 				console.log(data.error);
@@ -18,11 +19,7 @@ const AdminDashBoard = () => {
 				setUser(data);
 			}
 		});
-	};
-
-	useEffect(() => {
-		preload();
-	}, []);
+	}, );
 
 	const LeftSide = () => {
 		return (

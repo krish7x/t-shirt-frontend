@@ -78,7 +78,7 @@ const updateProducts = ({ match }) => {
 
 	useEffect(() => {
 		preload(match.params.productId);
-	}, []);
+	}, );
 
 	const onSubmit = (event) => {
 		event.preventDefault();

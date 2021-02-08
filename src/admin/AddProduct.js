@@ -56,7 +56,7 @@ const AddProducts = () => {
 
 	useEffect(() => {
 		preload();
-	}, []);
+	}, );
 
 	const onSubmit = (event) => {
 		event.preventDefault();
